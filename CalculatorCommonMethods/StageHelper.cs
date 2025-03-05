@@ -9,9 +9,9 @@ public class StageHelper {
                 case "Stage":
                     return Constants.StageApplicationUrl;
                 default :
-                    break;
+                    return Constants.StageApplicationUrl;
             }
         }
-        return "";
+        return Constants.StageApplicationUrl;
     }
 }
