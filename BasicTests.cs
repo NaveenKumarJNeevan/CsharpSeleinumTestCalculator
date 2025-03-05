@@ -19,7 +19,7 @@ public class BasicTests : IDisposable
     [Fact]
     public void VerifyApplication()
     {
-      Driver.Navigate().GoToUrl(Constants.ApplicationUrl);
+      Driver.Navigate().GoToUrl(StageHelper.getStage());
       Assert.Contains("Calculator", Driver.Title);
     }
 

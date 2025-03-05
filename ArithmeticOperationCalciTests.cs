@@ -11,7 +11,7 @@ public class ArithmeticOperationCalciTests : IDisposable
 
     public ArithmeticOperationCalciTests(ITestOutputHelper output) {
       Driver = new ChromeDriver();
-      Driver.Navigate().GoToUrl(Constants.ApplicationUrl);
+      Driver.Navigate().GoToUrl(StageHelper.getStage());
       this.output = output;
      }
 
